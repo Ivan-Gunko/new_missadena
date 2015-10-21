@@ -1,0 +1,28 @@
+<div class="bid">
+	<div class="bid__container">
+		@@include('../breadcrumbs/breadcrumbs.html')
+		<h1>Оставить заявку</h1>
+		<p class="bid__desc">Вы можете оставить онлайн-заявку и наш специалист свяжется с вами в течении 15 минут.</p>
+		<div class="bid__form">
+			<form action="#">
+				<label for="name">Ваше имя <sub>*</sub></label>
+				<input type="text" id="name" class="input__def" required>
+				<label for="email">Ваш e-mail <sub>*</sub></label>
+				<input type="text" id="email" class="input__def" required>
+				<label for="tel">Ваш телефон <sub>*</sub></label>
+				<input type="text" id="tel" class="input__def" required>
+				<label for="message" class="message">Ситуация</label>
+				<textarea name="message" id="message" class="input__textarea"></textarea>
+				<button type="submit" class="button button--blue">Отправить</button>
+				
+			</form>
+		</div>
+	</div>
+	<aside>
+		<div class="aside">
+		@@include('../aside/aside-block1.html')
+		@@include('../aside/aside-block2.html')
+		</div>
+	</aside>
+	
+</div>

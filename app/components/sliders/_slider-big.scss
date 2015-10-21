@@ -1,0 +1,52 @@
+.slider {
+	&__big {
+		position: relative;
+
+		.slider__ind.active {
+			opacity: .5;
+		}
+
+		.swither__item {
+			display: inline-block;
+			width: 1100px;
+		}
+
+		.slider__ind {
+			cursor: pointer;
+		}
+
+		.nav {
+			top: 274px;
+			z-index: 10;
+
+			&--next {
+				right: 0;
+			}
+
+			&--prev {
+				left: 0;
+			}
+		}
+
+		&--window {
+			max-width: 1100px;
+			height: 575px;
+			margin: 0 auto;
+			overflow: hidden;
+			position: relative;
+		}
+	}
+
+	&__preview {
+		max-width: 1100px;
+		margin: 10px auto;
+		li {
+			@extend .inline-block-vtop;
+
+			&:not(:last-child) {
+				margin-right: 6px;
+			}
+		}
+
+	}
+}

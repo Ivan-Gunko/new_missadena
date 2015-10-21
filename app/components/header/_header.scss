@@ -1,0 +1,257 @@
+.header {
+	height: 220px;
+	background: $clr-bg url(/images/header-line.png) 0 0 no-repeat;
+	min-width: 1024px;
+}
+
+.head {
+	&__container {
+		box-sizing: border-box;
+		color: #fff;
+		margin: 0 auto;
+		max-width: 1185px;
+		min-width: 1024px;
+		padding: 25px 10px 0;
+	}
+
+	&__box {
+		@extend .inline-block-vtop;
+		width: 25%;
+		box-sizing: border-box;
+		height: 145px;
+		&:last-child {
+			text-align: right;
+		}
+	}
+
+	&__desc {
+		font: 22px/27px 'UbuntuLight';
+		padding-top: 28px;
+	}
+
+	&__row {
+		position: relative;
+		max-width: 1185px;
+	}
+
+	&__tabs {
+		@extend .inline-block-vtop;
+		width: 750px;
+		a {
+			background-color: $clr-btn;
+			border-radius: 5px;
+			display: inline-block;
+			font: 20px/43px 'UbuntuRegular';
+			height: 43px;
+			letter-spacing: 3px;
+			margin: 0 1.5%;
+			padding: 0 15px;
+			text-decoration: none;
+			text-transform: uppercase;
+			vertical-align: middle;
+			&.active {
+				background-color: $clr-light;
+				color: $clr-bg;
+				position: relative;
+				&:before {
+					background: transparent url(/images/arr.png) 0 0 no-repeat;
+					bottom: -20px;
+					content: '';
+					height: 23px;
+					left: calc(50% - 30px);
+					position: absolute;
+					width: 60px;
+				}
+			}
+		}
+	}
+}
+
+.search {
+	display: inline-block;
+	max-width: 390px;
+	width: calc(100% - 750px);
+	/*width: 35%;*/
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	
+	input[type="text"] {
+		background: transparent url(/images/ico-search.png) 96% 8px no-repeat;
+		border-radius: 4px;
+		border: 1px solid $clr-light;
+		box-sizing: border-box;
+		color: transparent;
+		height: 43px;
+		padding: 5px 57px 5px 18px;
+		position: absolute;
+		width: 100%;
+		z-index: 2;
+		&:focus {
+			background-color: $clr-bg;
+			color: $clr-light;
+		}
+	}
+
+	&__help {
+		position: absolute;
+		top: 15px;
+		left: 20px;
+		font-size: 13px;
+		font-family: 'UbuntuLight';
+		z-index: 0;
+		i {
+			font-family: 'UbuntuLightItalic';
+		}
+	}
+
+}
+
+.logo {
+	text-align: center;
+}
+
+.list {
+	&__small {
+		&--nav{
+			text-align: right;
+			&:before {
+				content: '';
+				display: inline-block;
+				width: 0;
+				height: 100%;
+				vertical-align: middle;
+				font-size: 15px;
+			}
+
+			& ul {
+				display: inline-block;
+				vertical-align: middle;
+				padding: 0 7px; 
+				text-align: left;
+				& li {
+					line-height: 30px;
+					padding-left: 3px;
+					&:before {
+						background: transparent url(/images/ico-list.png) 0 0 no-repeat;
+						content: '';
+						display: inline-block;
+						height: 13px;
+						padding-right: 3px;
+						width: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.lang {
+	display: inline-block;
+	width: 129px;
+	margin-top: 10px;
+	&__box {
+		@extend .inline-block-vtop;
+		box-sizing: border-box;
+		font-size: 13px;
+		height: 32px;
+		// padding: 1px;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		width: 25%;
+		&:before {
+			background: transparent url(/images/ico-flags.png) 0 -1px no-repeat;
+			content: '';
+			display: inline-block;
+			height: 14px;
+			width: 22px;
+			padding-bottom: 1px;
+		}
+
+		&--ru:before {background-position: -32px -1px;}
+		&--ger:before {background-position: -64px -1px;}
+		&--fra:before {background-position: -96px -1px;}
+	}
+}
+
+.phone {
+	&__number {
+		font: 30px/48px 'UbuntuLight';
+		text-decoration: none;
+		&--small {
+			font-size: 20px;
+			line-height: 38px;
+		}
+	}
+
+	&__label {
+		font: 13px/22px 'UbuntuLight';
+		vertical-align: middle;
+		span:before {
+			background: transparent url(/images/ico-phone.png) 0 0 no-repeat;
+			content: '';
+			display: inline-block;
+			height: 20px;
+			padding-left: 4px;
+			vertical-align: middle;
+			width: 20px;
+		}
+	}
+}
+
+.nav {
+	height: 69px;
+	width: 100%;
+	min-width: 1024px;
+	background: $clr-bg url(/images/bg-menu.jpg) 0 0 repeat-x;
+}
+
+.main-menu {
+	box-sizing: border-box;
+	color: $clr-light;
+	margin: 0 auto;
+	max-width: 1185px;
+	min-width: 1024px;
+	padding: 0 10px;
+	ul {
+		margin-left: 17px;
+	}
+
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0 13px;
+		a {
+			font: 18px/69px 'UbuntuLight';
+			vertical-align: middle;
+		}
+	}
+
+	&--small {
+		color: #fff;
+		width: 100%;
+		position: relative;
+		min-width: auto;
+		padding: 0;
+		ul{
+			padding: 0;
+			margin: 0;
+			text-align: justify;
+			&:after {
+				content: '';
+				width: 100%;
+				height: 0;
+				display: inline-block;
+			}
+			li {
+				padding: 0;
+				a {
+					font: 15px/35px 'UbuntuLight';
+				}
+			}
+		}
+	}
+}
+

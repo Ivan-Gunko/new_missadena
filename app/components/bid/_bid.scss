@@ -1,0 +1,82 @@
+.bid {
+	margin: 0 auto 80px;
+	max-width: 1185px;
+	min-width: 1024px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	h1 {
+		font: 28px/33px 'UbuntuBold';
+		padding: 7px 0 20px;
+	}
+
+	&__desc {
+		padding: 5px 0 35px;
+	}
+
+	&__container {
+		@extend .inline-block-vtop;
+		width: calc(100% - 290px);
+	}
+
+	&__form {
+		margin-right: 100px;
+		border-radius: 4px;
+		padding: 40px 11%;
+		background-color: $clr-gray-lite;
+
+		label {
+			display: inline-block;
+			margin-right: -4px;
+			width: 195px;
+			font: 18px/21px 'UbuntuMedium';
+			display: inline-block;
+			vertical-align: middle;
+			sub {
+				color: #fe1010;
+			}
+		}
+
+		textarea,
+		input[type="text"] {
+			display: inline-block;
+			vertical-align: middle;
+			width: calc(100% - 195px);
+		}
+
+		.input__textarea,
+		.input__def {
+		    border: 2px solid #99d5db;
+		    border-radius: 4px;
+		    height: 55px;
+		    margin: 5px 0;
+		    color: $clr-bg;
+		    &:focus {
+		    	border-color: $clr-bg2;
+		    }
+		}
+
+		.input__def {
+			font: 18px/21px 'UbuntuMedium';
+			letter-spacing: 2.5px;
+			text-transform: uppercase;
+		}
+
+		.input__textarea {
+			height: 135px;
+			padding: 20px;
+			font-family: 'UbuntuMedium';
+		}
+
+		.message {
+			vertical-align: top;
+			padding-top: 20px;
+		}
+
+		.button {
+			display: block;
+			margin-left: 195px;
+			margin-top: 20px;
+			width: 232px;
+		}
+	}
+}

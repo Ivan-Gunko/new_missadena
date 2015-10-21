@@ -1,0 +1,68 @@
+.clinics {
+	margin: 0 auto 45px;
+	max-width: 1185px;
+	min-width: 1024px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	h1 {
+		font: 28px/33px 'UbuntuBold';
+		padding: 7px 0 22px;
+	}
+
+	&__container {
+		@extend .inline-block-vtop;
+		width: calc(100% - 290px);
+		padding-right: 100px;
+		box-sizing: border-box;
+	}
+
+	&__adr {
+		border-left: 1px solid $clr-bg;
+		padding: 0 0 0 20px;
+		p {
+			line-height: 20px;
+			margin-bottom: 15px;
+			padding: 0;
+		}
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__link {
+		color: $clr-bg;
+	}
+}
+
+.search{
+	&__box {
+		width: 100%;
+		margin-bottom: 35px;
+	}
+
+	&__desc {
+		@extend .inline-block-vtop;
+		width: 62.6%;
+		margin-right: -4px;
+		color: $clr-bg;
+		font: 18px/24px 'UbuntuLight';
+		padding-top: 7px;
+	}
+
+	&__block {
+		@extend .inline-block-vtop;
+		width: 37.4%;
+		position: relative;
+	}
+
+	&__city {
+		background:transparent url('/images/ico-search2.png') 95% 17px no-repeat;
+		border-radius: 3px;
+		border: 2px solid $clr-bg;
+		color: $clr-bg;
+		font: 18px/21px 'UbuntuMedium';
+		height: 60px;
+		letter-spacing: 2.5px;
+		text-transform: uppercase;
+	}
+}

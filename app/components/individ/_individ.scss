@@ -1,0 +1,83 @@
+.individ {
+	margin: 0 auto 80px;
+	max-width: 1185px;
+	min-width: 1024px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	&__row {
+		margin-top: 30px;
+	}
+
+	&__tabs {
+		@extend .inline-block-vtop;
+		width: 41.6%;
+		box-sizing: border-box;
+		font: 19px/27px 'UbuntuMedium';
+		text-transform: uppercase;
+		padding: 10px 95px 10px 0;
+		li {
+			padding: 13px 0;
+			position: relative;
+			a{
+				display: inline-block;
+				width: 100%;
+				text-decoration: none;
+				background:transparent url('/images/line.jpg') 0 50% repeat-x;
+				color: $clr-bg;
+				&.active {
+					color: #000;
+					background-image: url('/images/line-active.jpg');
+				}
+				span {
+					background-color: #fff;
+					padding-right: 10px;
+				}
+			}
+		}
+	}
+
+	&__desc {
+		@extend .inline-block-vtop;
+		width: 58.4%;
+		padding-top: 12px;
+		p {
+			font-size: 17px;
+			line-height: 32px;
+		}
+
+		.button {
+			display: inline-block;
+			color: #1377cd;
+		}
+	}
+}
+
+.slider__small--wrap {
+	margin: -10px -20px 0; 
+	.slider__main {
+		height: 370px;
+	}
+}
+
+.link {
+	margin-top: 35px;
+	&__clinic {
+		color: #1377cd;
+		display: inline-block;
+		font: 18px/25px 'UbuntuMedium';
+		margin-left: 20px;
+		padding-left: 35px;
+		position: relative;
+		vertical-align: top;
+		width: 210px;
+		&:after {
+			content: '';
+			position: absolute;
+			width: 26px;
+			height: 26px;
+			top: 16px;
+			left: 0;
+			background:transparent url('/images/ico-search3.png') 0 0 no-repeat;
+		}
+	}
+}

@@ -1,0 +1,122 @@
+.ui-datepicker {
+	@extend .theme-window;
+	width: 300px;
+	background-color: $clr-body;
+	// color: $clr-text-gray;
+
+	&-other-month {
+		color: $clr-dark-text;
+	}
+
+	&-header {
+		background-color: $clr-dark;
+		color: #fff;
+		margin-bottom: 15px;
+	}
+
+
+	&-next,
+	&-prev {
+
+		display: block;
+		position: absolute;
+		top: 0;
+		width: 23px;
+		height: 40px;
+		cursor: pointer;
+		// background-color: $clr-green-active;
+		&:before {
+			color: #FFF;
+			// font-family: 'FontAwesome';
+			left: 25%;
+			position: relative;
+			top: 33%;
+		}
+
+		&:focus,
+		&:hover {
+			text-decoration: none;
+		}
+
+		span {
+		    position: absolute;
+		}
+	}
+
+	&-next:before,
+	&-prev:before {
+		position: absolute;
+		width: 9px;
+		height: 11px;
+		content: '';
+		background:transparent url('/images/icons.png') -744px -13px no-repeat;
+	}
+	&-next:before {
+		transform: rotate(180deg);
+		right: 0;
+	}
+	&-next {right: 0;}
+	
+	&-title {
+		// border-bottom: 1px solid $clr-line-datepicker;
+		font-weight: bold;
+		line-height: 39px;
+		margin: 0 22px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		margin: 0 0 .4em;
+	}
+
+	thead {
+		color: $clr-red;
+		text-transform: uppercase;
+		font-size: 12px;
+	}
+
+	th,
+	td, {
+		// border-right: 1px solid $clr-line-datepicker; 
+	    font-weight: bold;
+	    padding: .7em .3em;
+	    text-align: center;
+	}
+
+	tr {
+		// border-bottom: 1px solid $clr-line-datepicker; 
+	}
+
+	td:last-child,
+	tr:last-child {
+		border: 0;
+	}
+
+	td {
+	    padding: .54em .3em;
+	}
+
+	&-today {
+	// background-color: $clr-blue;
+		a {
+			border-radius: 7px;
+		    height: 15px;
+		    display: inline-block;
+		    width: 15px;
+		    box-shadow: 0 0 0 5px $clr-red;
+			color: #fff;
+			background-color: $clr-red;
+		}
+	}
+}
+
+.ui-icon {
+    display: block;
+    text-indent: -99999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+

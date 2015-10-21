@@ -1,0 +1,199 @@
+// bower:scss
+// endbower
+
+@import "mixins";
+
+/* core */
+@import "core/pallete";
+@import "core/extends";
+
+
+/* modules */
+
+
+/*pages*/
+// @import "modules/index";
+
+
+/*vendor*/
+// @import "vendor/jquery-ui/datepicker";
+// @import "../scripts/fancybox/jquery.fancybox.css";
+
+
+/*comonents*/
+@import "../components/header/header";
+@import "../components/footer/footer";
+// @import "../components/txt/txt";
+// @import "../components/sliders/slider-head";
+// @import "../components/adv/adv";
+@import "../components/promo/promo";
+@import "../components/sliders/slider";
+@import "../components/form-row/form-row";
+@import "../components/contacts/contacts";
+@import "../components/bid/bid";
+@import "../components/aside/aside";
+@import "../components/clinics/clinics";
+@import "../components/breadcrumbs/breadcrumbs";
+@import "../components/individ/individ";
+
+/* layouts */
+@import "layouts/details";
+@import "layouts/buttons";
+// @import "layouts/left-aside";
+// @import "layouts/rigth-aside";
+
+
+/* include fonts */
+
+@include font-face('UbuntuLight', 'UbuntuLight', 'UbuntuLight');
+@include font-face('UbuntuRegular', 'UbuntuRegular', 'UbuntuRegular');
+@include font-face('UbuntuBold', 'UbuntuBold', 'UbuntuBold');
+@include font-face('UbuntuMedium', 'UbuntuMedium', 'UbuntuMedium');
+@include font-face('UbuntuLightItalic', 'UbuntuLightItalic', 'UbuntuLightItalic');
+@include font-face('UbuntuItalic', 'UbuntuItalic', 'UbuntuItalic');
+
+
+/* ==============================================
+                   DOM ELEMENTS
+ ============================================== */
+html {
+    height: 100%;
+    font-size: 15px;
+}
+
+.container {
+    min-height: 100%;
+    box-sizing: border-box; -moz-box-sizing: border-box;
+    padding-bottom: 210px;
+}
+
+body {
+    font-family: 'UbuntuRegular', arial;
+    height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    // color: $clr-dark-default;
+    // background-color: $clr-body;
+    // -webkit-text-size-adjust: auto;
+
+}
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+   text-decoration: none;
+}
+
+strong {
+    // font-weight: bold;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family:  'UbuntuRegular';
+    line-height: 1.6em;
+    // font-weight: bold
+}
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 19px;
+}
+h3 {
+    font-size: 16px;
+}
+h4 {
+    font-size: 15px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    margin: .7em 0;
+}
+p {
+    padding: 5px 0;
+    line-height: 1.2em;
+}
+
+.clearfix:before,
+.clearfix:after {
+content: " ";
+display: table;
+}
+.clearfix:after {
+visibility: hidden;
+        display: block;
+        content: "";
+        clear: both;
+        height: 0;
+        
+}
+.clearfix {
+*zoom: 1;
+}
+.slider-fix {
+    position: absolute;
+    width: 100%;
+}
+.container {
+    // max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.v-hidden{
+    visibility: hidden;
+}
+
+// .filter-label,
+// input[type="password"],
+// input[type="text"] {
+//     height: 45px;
+//     width: 200px;
+// }
+
+.filter-label,
+textarea,
+input[type="password"],
+input[type="text"] {
+    // border: 1px solid $clr-dark-default;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+textarea:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+    // border: 1px solid $clr-default;
+    outline: 0;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label:before {
+    content: ' ';
+    cursor:pointer;
+    display:inline-block;
+}
+input[type="checkbox"] + label {
+    cursor: pointer;
+}

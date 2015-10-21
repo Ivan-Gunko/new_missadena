@@ -1,0 +1,129 @@
+aside {
+	@extend .inline-block-vtop;
+	width: 290px;
+	padding-top: 100px;
+	.shares {
+		position: relative;
+		&__info,
+		&__title {
+			text-align: center;
+			position: absolute;
+		}
+
+		&__info {
+			font: 18px/33px 'UbuntuBold';
+			color: $clr-text-adv;
+			top: 79px;
+			width: 100%;
+		}
+
+		&__title {
+			font: 28px/33px 'UbuntuBold';
+			color: #fff;
+			top: 107px;
+		}
+
+		.button {
+			width: 235px;
+			height: 55px;
+			position: absolute;
+			padding-top: 15px;
+			box-sizing: border-box;
+			text-align: center;
+			bottom: 30px;
+			left: calc((100% - 235px)/2);
+			border-radius: 5px;
+			box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.41);
+
+		}
+	}
+
+	.feedback {
+		text-align: center;
+		margin-top: 53px;
+		&__title {
+			font: 24px/33px 'UbuntuBold';
+		}
+
+		&__tel {
+			font: 24px/28px 'Ubuntulight';
+			color: $clr-bg;
+			text-decoration: none;
+			}
+
+		&__subinfo {
+			color: $clr-bg;
+			padding: 0;
+			font-size: 15px;
+			&:before {
+				content: '';
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 5px;
+				width: 19px;
+				height: 16px;
+				background:transparent url('/images/ico-phone2.png') 0 0 no-repeat;
+			}
+		}
+		&--full {
+			background-color: $clr-gray-lite;
+			border-radius: 4px;
+			margin-top: 40px;
+			padding: 31px 30px;
+			text-align: center;
+			.label__textarea,
+			.label__def {
+				left: 0;
+				background-color: transparent;
+				&:focus {
+					border-color: $clr-bg;
+					background-color: #fff;
+					color: $clr-bg;
+				}
+				&.dirty:invalid {
+					background-color: red;
+					color: transparent;
+				}
+				&:valid {
+					background-color: #fff;
+					color: $clr-bg;
+				}
+			}
+
+			.label__wrap--textarea {
+				height: 135px;
+			}
+
+			form {
+				margin-top: 10px;
+			}
+
+			.label__def ~ .placeholder {
+				letter-spacing: 2.5px;
+				text-transform: uppercase;
+				font: 18px/21px 'UbuntuMedium';
+			}
+
+			.placeholder {
+				background-color: #fff;
+				border-radius: 4px;
+				box-sizing: border-box;
+				color: $clr-bg;
+				height: 100%;
+				left: 0;
+				padding-top: 15px;
+				position: absolute;
+				top: 0;
+				width: 100%;
+				z-index: 0;
+			}
+			
+			.button	{
+				display: inline-block;
+				width: 100%;
+				margin-top: 12px;
+				letter-spacing: 3px;
+			}
+		}
+	}
+}

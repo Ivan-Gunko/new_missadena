@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+.breadcrumb {
+	font-size: 13px;
+	line-height: 60px;
+	margin: 15px 0;
+	color: $clr-bg;
+	li {
+		display: inline-block;
+		&:not(:last-child):after {
+			content: '»';
+			padding: 0 5px;
+			color: $clr-gray;
+		}
+
+		&.active {
+			color: $clr-gray;
+			font-weight: 500;
+		}
+	}
+}

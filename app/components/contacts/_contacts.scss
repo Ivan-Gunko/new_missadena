@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+.contacts {
+	h1 {
+		font: 28px/33px 'UbuntuBold';
+		padding: 7px 0 28px;
+	}
+	&__container {
+		min-width: 1024px;
+		max-width: 1165px;
+		margin: 0 auto;
+	}
+	&__row {
+		&--colorize {
+			background-color: $clr-light;
+		}
+	}
+
+	&__box {
+		@extend .inline-block-vtop;
+		width: 33%;
+	}
+}
+
+.info {
+	padding: 32px 0;
+	p {
+		font: 22px/36px 'UbuntuLight';
+	}
+
+	&__fax,
+	&__tel {
+		a {text-decoration: none;}
+	}
+
+	&__adr {color: $clr-dark;}
+
+	& &__week {
+		font-family: 'UbuntuItalic';
+		color: $clr-bg;
+	}
+
+	&__email,
+	&__skype {
+		a {
+			color: $clr-bg;
+		}
+	}
+
+	&__block {
+		margin: 35px 0 25px;
+		box-sizing: border-box;
+		h3 {
+			font: 22px/36px 'UbuntuMedium';
+		}
+		p {
+			padding: 10px 0;
+			font: 15px/24px 'UbuntuLight';
+		}
+	}
+}
+
+#map {
+	display: inline-block;
+	width: 100%;
+	height: 405px;
+	&:empty {
+		text-align: center;
+		background-color: $clr-gray;
+		&:after {
+			content: 'карта пустая';
+		}
+	}
+}
+

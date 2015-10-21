@@ -1,0 +1,104 @@
+.footer {
+	height: 190px;
+	position: relative;
+	background-color: $clr-bg;
+	margin-top: -182px;
+	text-align: left;
+	min-width: 1024px;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 20px;
+		top: -19px;
+		background: transparent url('/images/footer-line.png') 0 0 no-repeat;
+	}
+
+	&__container {
+		box-sizing: border-box;
+		color: #fff;
+		margin: 0 auto;
+		max-width: 1185px;
+		min-width: 1024px;
+		padding: 17px 10px 0;
+	}
+
+	&__box {
+		@extend .inline-block-vtop;
+		width: 67%;
+		&--three {
+			width: 33%;
+			box-sizing: border-box;
+			&.phone {
+				padding-left: 22px;
+			}
+		}
+
+		&.logo {
+			width: 15%;
+			padding-left: 5px;
+		}
+		&.about {
+			width: 18%;
+			color: $clr-light;
+			font: 13px/23px 'UbuntuLight';
+			padding-left: 15px;
+		    box-sizing: border-box;
+		    text-indent: -14px;
+		    span {
+		    	font-size: 15px;
+		    }
+		}
+	}
+}
+
+.company {
+	&__nav {
+		font: 15px/15px 'UbuntuLight';
+		border-bottom: 2px solid $clr-btn;
+		padding-bottom: 8px;
+		color: $clr-light;
+		& li {
+			display: inline-block;
+			padding: 5px 0;
+			&:not(:last-child) {
+				padding-right: 20px;
+			}
+		}
+	}
+}
+
+.socials {
+	width: 208px;
+	height: 70px;
+	border-radius: 5px;
+	background-color: $clr-bg2;
+	padding: 19px 22px;
+	box-sizing: border-box;
+	&__icon {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		background: transparent url('/images/ico-sociall.png') 0 0 no-repeat;
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+
+		&--fb {background-position: -43px 0;}
+		&--tw {background-position: -86px 0;}
+		&--in {background-position: -129px 0;}
+	}
+}
+
+.contact__info {
+	margin-left: 10px;
+}
+
+.develop {
+	text-align: right;
+	&__img {
+		display: inline-block;
+		width: 131px;
+		height: 31px;
+	}
+}

@@ -1,0 +1,103 @@
+.slider {
+	&__main {
+		height: 383px;
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		&--navblock {
+			position: absolute;
+			width: 50%;
+			height: 100%;
+			background-color: rgba(24, 160, 174, 0.77);
+			right: 0;
+			top: 0;
+		}
+
+		.nav {
+			position: absolute;
+			width: 30px;
+			height: 148px;
+			top: 103px;
+			background: transparent url('/images/arrow-slider.png') 0 0 no-repeat;
+			&--prev {
+				left: 6%;
+				transform: rotate(180deg);
+			}
+			&--next {
+				right: 3%;
+			}
+		}
+	}
+
+	&__box {
+		max-width: 580px;
+		position: relative;
+		height: 100%;
+		&:before {
+			content: '';
+			width: 0;
+			height: 100%;
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.button {
+			position: absolute;
+			bottom: 35px;
+			right: 18%;
+		}
+	}
+
+	&__anim {
+		color: #fff;
+	}
+
+	&__wrapper {
+		&--desc {
+			width: 100%;
+			padding: 0 50px 35px 16%;
+			box-sizing: border-box;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: -4px;
+		}
+	}
+
+	&__indicator {
+		bottom: 50px;
+		position: absolute;
+		left: 16.5%;
+		li {
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			background-color: #fff;
+			border-radius: 12px;
+			cursor: pointer;
+			&:not(:last-child) {
+				margin-right: 5px;
+			}
+			&.active {
+				background: #fff url('/images/point-slider.png') 4px 4px no-repeat;
+			}
+		}
+	}
+}
+
+.anim {
+	&__title {
+		font: 28px/40px 'UbuntuBold';
+	}
+
+	&__subtitle {
+		font: 24px/28px 'UbuntuLight';
+		padding: 0;
+	}
+
+	&__desc {
+		margin-top: 15px;
+		// line-height: 26px;
+		// font-size: 15px;
+		font: 15px/26px 'UbuntuLight';
+	}
+}

@@ -1,0 +1,82 @@
+/* ==============================================
+                   DISPLAYINGS
+ ============================================== */
+.inline-block {
+	display: inline-block;
+	margin-right: -4px;
+}
+.inline-block-vtop {
+	@extend .inline-block;
+	vertical-align: top;
+}
+.inline-block-vcenter {
+	@extend .inline-block;
+	vertical-align: middle;
+}
+.inline-block-vbottom {
+	@extend .inline-block;
+	vertical-align: bottom;
+}
+
+
+/* ==============================================
+                    PADDINGS
+ ============================================== */
+.padding {
+	padding: 1rem 20px;
+}
+.horizontal-padding {
+	padding: 0 20px;
+}
+.vertical-padding {
+	padding: 1rem 0;
+}
+.padding-left {
+	padding-left: 20px;
+}
+
+/* ==============================================
+                    MARGINS
+ ============================================== */
+.margin-left {
+	margin-left: 20px;
+}
+.margin-vertical {
+	margin: 1rem 0;
+}
+.margin-top {
+	margin-top: 1rem;
+}
+.margin-bottom {
+	margin-bottom: 1rem;
+}
+
+/* ==============================================
+                    FLOATS
+ ============================================== */
+.fl-l {
+	float: left;
+}
+.fl-r {
+	float: right;
+}
+
+.align-center {
+	margin: 0 auto;
+	max-width: 1000px;
+	// position: relative;
+	text-align: center;
+}
+.align-left {
+	margin: 0 auto;
+	max-width: 1000px;
+	text-align: left;
+}
+
+.al-r {
+	text-align: right;
+}
+
+.mg-b--35 {
+	margin-bottom: 35px !important;
+}
