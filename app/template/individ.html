@@ -18,5 +18,25 @@
 
 	@@include('../components/footer/footer.html')
 
+	@@include('../components/scripts/scripts.html')
+
+	<script>
+		$('.slider__main').sliderShop({
+	        caseLimit: 1, //кол-во товаров в витрине
+	        spaceSection: 'auto', //расстояние между секциями
+	        animation: 'slide', //тип анимации
+	        count: true, // счетчик слайдов
+	        countBox: 'slider__ind', //селектор списка
+	        countSelect: true, //выбор по индикатору
+	        timer: false, //автопереключение
+	        repeat: true, //показ слайдов по кругу
+	        animBox: 'slider__anim', // всплывающие блоки - $(селектор)
+	        response: false,
+	        tooltip: 'tooltip'
+	    });
+
+	    $('.individ__tabs').tab(false, 0);
+	</script>
+
 </body>
 </html>

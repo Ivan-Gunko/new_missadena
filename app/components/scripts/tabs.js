@@ -30,14 +30,14 @@ $.fn.tab = function (h,a,d) {
 		btn.on('click', function( e ) {
 			e.preventDefault();
 
-			if($(this).parent().hasClass('active')) return;
+			if($(this).hasClass('active')) return;
 
-			btn.parent().removeClass('active')
+			btn.removeClass('active')
 					btn.each(function() {
 						$('body').find('.' + $(this).data('tab')).fadeOut(anim);
 					});
 
-			$(this).parent().addClass('active');
+			$(this).addClass('active');
 
 			if (hidden) {
 				$(document).trigger('close');

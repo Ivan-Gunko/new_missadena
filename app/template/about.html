@@ -1,0 +1,44 @@
+@@include('../components/head/head.html')
+
+<body>
+
+	@@include('../components/noscript/noscript.html')
+
+	<div class="container">
+
+		@@include('../components/header/header.html')
+
+		<main>
+
+			@@include('../components/about/about.html')
+
+		</main>
+
+	</div>
+
+	@@include('../components/footer/footer.html')
+
+	@@include('../components/scripts/scripts.html')
+
+	<script>
+	$('.slider-mini').sliderShop({
+        caseLimit: 3, //кол-во товаров в витрине
+        spaceSection: 'auto', //расстояние между секциями
+        animation: 'slide', //тип анимации
+        count: false, // счетчик слайдов
+        countBox: false, //селектор списка
+        countSelect: false, //выбор по индикатору
+        timer: false, //автопереключение
+        repeat: false, //показ слайдов по кругу
+        animBox: null, // всплывающие блоки - $(селектор)
+        response: false
+    });
+
+    $('.txt__list--number li').each(function (ind, el) {
+    	$(this).prepend('<span class="numb">'+ (ind + 1) + '</span>');
+    	console.log($(this));
+    })
+	</script>
+</body>
+
+</html>

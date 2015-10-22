@@ -84,7 +84,7 @@
 <nav class="nav">
     <div class="main-menu">
         <ul>
-            <li><a href="#">Оперативная помощь</a></li>
+            <li><a href="about.html">Оперативная помощь</a></li>
             <li><a href="#">Лечение</a></li>
             <li><a href="#">Исследования</a></li>
             <li><a href="#">Доставка медицинских препаратов</a></li>
@@ -139,7 +139,9 @@
 		</div>
 	</div>
 	<div class="contacts__container">
-		<div id="map"></div>
+		<div id="map">
+			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=t6_oVEiXvr16z9UOVMu8-CfB8DyKUW__&width=100%&height=100%&lang=ru_UA&sourceType=constructor"></script>
+		</div>
 	</div>
 	
 <div class="contacts__row form__min">
@@ -237,6 +239,28 @@
 		</div>
 	</div>
 </footer>
+
+	   
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    
+    <!-- endbuild -->   
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="components/scripts/tabs.js"></script>
+    <script src="components/sliders/slider.js"></script>
+    
+    <!-- endbuild -->
+
+<script>
+    $('.head__tabs').tab();
+</script>
+
+
+
 
 </body>
 </html>
