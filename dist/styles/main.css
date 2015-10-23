@@ -308,6 +308,9 @@ nav.nav {
         .main-menu--small ul li a {
           font: 15px/35px 'UbuntuLight'; }
 
+.nav--2 {
+  display: none; }
+
 @media screen and (max-width: 1090px) {
   .search__help i {
     display: none; } }
