@@ -218,7 +218,7 @@
   margin-top: 10px; }
   .lang__box {
     box-sizing: border-box;
-    font-size: 13px;
+    font-size: 12px;
     height: 32px;
     text-align: center;
     text-decoration: none;
@@ -230,7 +230,17 @@
       display: inline-block;
       height: 14px;
       width: 22px;
-      padding-bottom: 1px; }
+      padding-bottom: 1px;
+      opacity: .85; }
+    .lang__box.active {
+      text-decoration: underline;
+      font-size: 13px; }
+      .lang__box.active:before {
+        opacity: 1; }
+    .lang__box:hover {
+      font-size: 13px; }
+      .lang__box:hover:before {
+        opacity: 1; }
     .lang__box--ru:before {
       background-position: -32px -1px; }
     .lang__box--ger:before {
@@ -298,6 +308,9 @@ nav.nav {
         .main-menu--small ul li a {
           font: 15px/35px 'UbuntuLight'; }
 
+@media screen and (max-width: 1090px) {
+  .search__help i {
+    display: none; } }
 .footer {
   height: 190px;
   position: relative;
@@ -318,7 +331,8 @@ nav.nav {
     margin: 0 auto;
     max-width: 1185px;
     min-width: 1024px;
-    padding: 17px 10px 0; }
+    padding: 17px 10px 0;
+    background-color: #18a0ae; }
   .footer__box {
     width: 67%; }
     .footer__box--three {
@@ -703,7 +717,7 @@ p.text__colorize {
 .slider__indicator {
   bottom: 50px;
   position: absolute;
-  left: 16.5%; }
+  left: 12.5%; }
   .slider__indicator li {
     display: inline-block;
     width: 24px;

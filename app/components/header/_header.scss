@@ -154,7 +154,7 @@
 	&__box {
 		@extend .inline-block-vtop;
 		box-sizing: border-box;
-		font-size: 13px;
+		font-size: 12px;
 		height: 32px;
 		// padding: 1px;
 		text-align: center;
@@ -168,6 +168,20 @@
 			height: 14px;
 			width: 22px;
 			padding-bottom: 1px;
+			opacity: .85;
+		}
+		&.active {
+			text-decoration: underline;
+			font-size: 13px;
+			&:before {
+				opacity: 1;
+			}
+		}
+		&:hover {
+			font-size: 13px;
+			&:before {
+				opacity: 1;
+			}
 		}
 
 		&--ru:before {background-position: -32px -1px;}
@@ -252,6 +266,12 @@ nav.nav {
 				}
 			}
 		}
+	}
+}
+
+@media screen and (max-width: 1090px) {
+	.search__help {
+		i {display: none;}
 	}
 }
 
