@@ -1171,6 +1171,8 @@ aside {
     padding: 18px 24px;
     position: relative;
     text-transform: uppercase; }
+    .button--gray:hover {
+      background: #c1dee9 url("../images/bg-btn-hover.jpg") 0 0 repeat-x; }
   .button--arr:after {
     background: transparent url("../images/arrow-btn.png") 0 0 no-repeat;
     content: '';
@@ -1192,6 +1194,8 @@ aside {
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-top: 23px; }
+    .button--def:hover {
+      background: #c1dee9 url("../images/bg-btn2-hover.jpg") 0 0 repeat-x; }
   .button--blue {
     background: transparent url("../images/bg-btn3.jpg") 0 0 repeat-x;
     height: 55px;
@@ -1202,6 +1206,8 @@ aside {
     letter-spacing: 2px;
     position: relative;
     vertical-align: middle; }
+    .button--blue:hover {
+      background: #c1dee9 url("../images/bg-btn3-hover.jpg") 0 0 repeat-x; }
 
 .btn-arr {
   background: transparent url("../images/arrow-btn.png") 0 0 no-repeat;
