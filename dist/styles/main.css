@@ -722,7 +722,7 @@ p.text__colorize {
 .slider__indicator {
   bottom: 50px;
   position: absolute;
-  left: 12.5%; }
+  left: calc(100% - 270px - 42%); }
   .slider__indicator li {
     display: inline-block;
     width: 24px;
