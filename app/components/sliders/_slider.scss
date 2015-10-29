@@ -52,6 +52,9 @@
 	&__anim {
 		position: relative;
 		color: #fff;
+		height: 230px;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
 	&__wrapper {
@@ -81,7 +84,7 @@
 	&__indicator {
 		bottom: 50px;
 		position: absolute;
-		left: 12.5%;
+		left: calc(100% - 270px - 42%);
 		li {
 			display: inline-block;
 			width: 24px;

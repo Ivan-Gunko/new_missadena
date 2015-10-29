@@ -277,7 +277,6 @@ nav.nav {
   color: #dceeff;
   margin: 0 auto;
   max-width: 1185px;
-  min-width: 1024px;
   padding: 0 10px; }
   .main-menu ul {
     margin-left: 17px; }
@@ -290,7 +289,6 @@ nav.nav {
       vertical-align: middle; }
   .main-menu--small {
     color: #fff;
-    width: 100%;
     position: relative;
     min-width: auto;
     padding: 0; }
@@ -699,7 +697,10 @@ p.text__colorize {
     right: 13%; }
 .slider__anim {
   position: relative;
-  color: #fff; }
+  color: #fff;
+  height: 230px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 .slider__wrapper {
   position: absolute; }
   .slider__wrapper li {

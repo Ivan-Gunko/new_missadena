@@ -227,7 +227,7 @@ nav.nav {
 	color: $clr-light;
 	margin: 0 auto;
 	max-width: 1185px;
-	min-width: 1024px;
+	// min-width: 1024px;
 	padding: 0 10px;
 	ul {
 		margin-left: 17px;
@@ -245,7 +245,6 @@ nav.nav {
 
 	&--small {
 		color: #fff;
-		width: 100%;
 		position: relative;
 		min-width: auto;
 		padding: 0;
