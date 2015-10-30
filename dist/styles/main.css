@@ -289,8 +289,6 @@ nav.nav {
       vertical-align: middle; }
   .main-menu--small {
     color: #fff;
-    position: relative;
-    min-width: auto;
     padding: 0; }
     .main-menu--small ul {
       padding: 0;
