@@ -76,37 +76,6 @@
 		width: 100%;
 		box-sizing: border-box;
 	}
-	&__table {
-		display: table;
-		width: 100%;
-		border-collapse: collapse;
-		margin-top: 10px;
-		margin-bottom: 20px;
-		.table {
-			&__row {
-				display: inline-block;
-				width: 100%;
-				font: 17px/23px 'UbuntuLight';
-				border-bottom: 1px solid $clr-line-gray-lite;
-				cursor: pointer;
-				&:hover {
-					background-color: #ddd;
-				}
-				&--title {
-					color: $clr-bg;
-					border-bottom: 1px solid $clr-line-gray;
-					font: 18px/23px 'UbuntuLight';
-				}
-			}
-			&__cell {
-				@extend .inline-block-vtop;
-				box-sizing: border-box;
-				width: 20%;
-				min-height: 60px;
-				line-height: 60px;
-			}
-		}
-	}
 	&__list {
 		margin-left: 48px;
 		li {
@@ -298,14 +267,14 @@ p.text__colorize {
 		}
 	}
 }
-
-.img__float {
-	float: right;
-	padding: 10px 0 10px 10px;
-}
-
-.img__full {
-	margin-bottom: 30px;
+.img {
+	&__float {
+		float: right;
+		padding: 10px 0 10px 10px;
+	}
+	&__full {
+		margin-bottom: 30px;
+	}
 }
 
 .table__desc {
@@ -319,4 +288,39 @@ p.text__colorize {
     margin-right: 5px;
     font-size: 16px;
 }
+
+table {
+	border-bottom: 1px solid #ddd;
+	border-collapse: collapse;
+	border-spacing: 0;
+	max-width: 100%;
+	width: 100%;
+}
+
+.table {
+	& > * > tr {
+		& > td,
+		& > th {
+			border-top: 1px solid #ddd;
+			font: 18px/23px 'UbuntuLight';
+			line-height: 45px;
+			padding: 8px;
+		}
+		& > th {
+			color: #18a0ae;
+			vertical-align: bottom;
+   			border-bottom: 1px solid #a9a9a9;
+		}
+		&:hover {
+			background-color: #ddd;
+			cursor: pointer;
+		}
+		&:first-child > th {
+			border-top: 0;
+		}
+	}
+}
+
+
+
 
