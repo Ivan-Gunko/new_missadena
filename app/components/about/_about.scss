@@ -29,8 +29,11 @@
 			padding: 10px 0;
 		}
 	}
-	&__row {}
+	&__row {
+		// float: left;
+	}
 	&__container {
+		// @extend .clearfix;
 		box-sizing: border-box;
 		margin: 0 auto;
 		max-width: 1185px;
@@ -50,6 +53,7 @@
 		@extend .inline-block-vtop;
 		width: 33%;
 		box-sizing: border-box;
+		// float: left;
 		&--60 {
 			width: 58.8%;
 		}
@@ -108,6 +112,7 @@ p.text__colorize {
 	&__desc {
 		@extend .inline-block-vtop;
 		width: 34%;
+		float: left;
 		p {
 			line-height: 20px;
 			font-size: 15px;
@@ -199,6 +204,7 @@ p.text__colorize {
 		padding: 60px 10px 0 5px;
 		max-height: 325px;
 		overflow: hidden;
+		float: left;
 		// &:before {
 		// 	content: '';
 		// 	display: inline-block;
